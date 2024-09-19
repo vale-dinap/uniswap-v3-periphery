@@ -11,6 +11,8 @@ This compatibility layer has been created with two goals in mind:
 ## What’s Included
 The repository includes:
 - Updated Solidity contracts for compatibility with version 0.8.x and above.
+- Upgraded submodule Openzeppelin-contracts to v4.0.0.
+- Embedded some required external contracts.
 
 ## What’s Not Changed
 In keeping with the goal of maintaining the integrity of the original protocol:
@@ -38,6 +40,10 @@ A high-level overview of the project structure (Solidity files only):
  ┃ ┗ 🔷SelfPermit.sol
  ┣ 📂examples
  ┃ ┗ 🔷PairFlash.sol
+ ┣ 📂external
+ ┃ ┣ 🔷AddressStringUtil.sol
+ ┃ ┣ 🔷Base64.sol
+ ┃ ┣ 🔷SafeERC20Namer.sol
  ┣ 📂interfaces
  ┃ ┣ 📂external
  ┃ ┃ ┣ 🔶IERC1271.sol
